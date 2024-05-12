@@ -178,7 +178,7 @@ generateBtn.addEventListener('click', () => {
     for(let i=0; i<funcArr.length; i++) {
         password += funcArr[i]();
     }
-    console.log("COmpulsory adddition done");
+    console.log("Compulsory addition done");
 
     //remaining adddition
     for(let i=0; i<passwordLength-funcArr.length; i++) {
@@ -186,13 +186,13 @@ generateBtn.addEventListener('click', () => {
         console.log("randIndex" + randIndex);
         password += funcArr[randIndex]();
     }
-    console.log("Remaining adddition done");
+    console.log("Remaining addition done");
     //shuffle the password
     password = shufflePassword(Array.from(password));
     console.log("Shuffling done");
     //show in UI
     passwordDisplay.value = password;
-    console.log("UI adddition done");
+    console.log("UI addition done");
     //calculate strength
     calcStrength();
 });
